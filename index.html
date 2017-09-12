@@ -3,6 +3,8 @@
 <head>
 	<title>sketch</title>
 	<!-- If you are serving the site over HTTPS you have to load jQuery over HTTPS to make it work properly. -->
+	<!-- Scripts with the defer attribute are executed in order (i.e. first script 1, then script 2). This also does not block the browser.
+	Unlike async scripts, defer scripts are only executed after the entire document has been loaded. -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
 	<script type="text/javascript" src="script.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="reset.css">
