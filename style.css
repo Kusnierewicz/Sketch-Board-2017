@@ -1,0 +1,57 @@
+body {
+	padding: 30px;
+}
+
+.container {
+	margin: 0px auto;
+}
+
+.console {
+	/*display: none;*/
+	margin: 0px auto;
+	position: relative;
+	top: 75px;
+	text-align: center;
+}
+
+button{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+	width: 60px;
+	height: 60px;
+    background: yellow;
+    border-radius: 25px;
+}
+
+.sketch {
+	padding: 0px;
+	margin: 0px auto;
+	background-color: white;
+	border: 100px solid red;
+	border-radius: 30px;
+}
+
+.one {
+	overflow: hidden;
+}
+
+.two {
+	overflow: hidden;
+}
+
+.box {
+	width: 10px;
+	height: 10px;
+	border: 0px solid black;
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+
+}
+
+.hoovered {
+	background-color: darkgreen;
+}
