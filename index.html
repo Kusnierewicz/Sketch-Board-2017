@@ -11,20 +11,21 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header class="header" class="">
-		<p>How big the sketch should be??</p>
-		<form action="index_submit" method="get" accept-charset="utf-8">
-        	<input type="sketch_size" name="sketch_size">
-        </form>
-		<button id="start">Start</button>
 
-	</header><!-- /header -->
-
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<p>How big the sketch board should be??</p>
+			<form action="index_submit" method="get" accept-charset="utf-8">
+        		<input type="sketch_size" name="sketch_size">
+        	</form>
+			<a href="javascript:void(0);" id="create">Create!</a>
+		</div>
+	</div>
 	<div class="container">
 		<div class="palette">
-			<button class="blue">blue</button>
-			<button class="yellow">yellow</button>
-			<button class="red">red</button>
+			<a href="javascript:void(0);" id="blue">BB</a>
+			<a href="javascript:void(0);" id="red">RR</a>
+			<a href="javascript:void(0);" id="green">GB </a>
 		</div>
 		<div class="sketch one">
 		</div>

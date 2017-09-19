@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
     // sketcher building and listening for mouse movement
-    $('#start').click(function() {
+    $('#create').click(function() {
 
+        modal.style.display = "none";
         sketch();
         // mouse movement = drawing
         $(".box").on("mouseenter", function() {
@@ -17,7 +18,7 @@ $(document).ready(function() {
 
     // starting with fresh sketcher (reload page)
     $('.container').on('click', '.new', function() {
-        location.reload();
+        modal.style.display = "block";
     });
 
     // saving picture by printing it to pdf (web screen)
@@ -26,6 +27,10 @@ $(document).ready(function() {
     });
 
 });
+
+var modal = document.getElementById('popup');
+
+var btn = document.getElementById('create');
 
 //sketcher builder
 var sketch = function() {
